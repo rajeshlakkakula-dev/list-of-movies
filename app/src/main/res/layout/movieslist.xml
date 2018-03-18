@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="?android:selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/movieImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter" />
+
+
+        <TextView
+            android:id="@+id/movieName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/movieImage"
+            android:layout_margin="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/movieImage"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/movieRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/movieName"
+            android:layout_below="@+id/movieName"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/movieCrew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/movieRating"
+            android:layout_toEndOf="@+id/movieImage"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:typeface="normal" />
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
